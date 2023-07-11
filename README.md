@@ -32,7 +32,7 @@ Result with sRGB<br>
 
 ![a](splash_art_srgb.png)
 
-Result without RGB<br>
+Result without sRGB<br>
 
 ![a](splash_art_rgb.png)
 
