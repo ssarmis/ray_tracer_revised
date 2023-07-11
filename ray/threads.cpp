@@ -31,7 +31,7 @@ void TracerThread::TraceMain(ThreadContext context) {
 			
 			v3 origin(0, 0, 0);
 
-			int samplesPerPixel = 4;
+			int samplesPerPixel = 1;
 			for (int y = startY; y < endY; ++y) {
 				for (int x = 0; x < width; ++x) {
 					v3 color;
@@ -117,9 +117,9 @@ void ThreadManager::StopThreads() {
 void ThreadManager::CreateThreadPool(const std::vector<ThreadContext>& contextes) {
 	int threadCount = std::thread::hardware_concurrency();
 	if (contextes.size() < threadCount) {
-		threadCount = contextes.size();
 		std::cout << "INFO not using the full amount of cores" << std::endl;
 	}
+	threadCount = contextes.size();
 	for (int i = 0; i < threadCount; ++i) {
 		std::thread* t = new std::thread(TracerThread::TraceMain, contextes[i]);
 

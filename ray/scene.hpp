@@ -8,9 +8,11 @@
 #include "math.hpp"
 #include "object.hpp"
 
+class BVH;
 class Scene {
 public:
-    std::vector<Object*> mObject;
+    BVH* bvh;
+    std::vector<Object*> mObjects;
     Math::v3* mPaths;
     int mIterations;
 

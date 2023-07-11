@@ -149,13 +149,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="app.cpp" />
+    <ClCompile Include="bvh.cpp" />
+    <ClCompile Include="math.cpp" />
     <ClCompile Include="object.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="texture.cpp" />
     <ClCompile Include="threads.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bvh.hpp" />
     <ClInclude Include="global.hpp" />
+    <ClInclude Include="idiot_obj_parser.hpp" />
     <ClInclude Include="material.hpp" />
     <ClInclude Include="math.hpp" />
     <ClInclude Include="object.hpp" />
@@ -165,6 +169,7 @@
     <ClInclude Include="stb_image_write.h" />
     <ClInclude Include="texture.hpp" />
     <ClInclude Include="threads.hpp" />
+    <ClInclude Include="tribox.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

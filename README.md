@@ -4,6 +4,8 @@ This is a project I made for fun while revisiting some old projects, although I 
 in the past, I felt like it could be hugely improved.<br>
 
 This is a basic not optimized, multithreaded Path Tracer.<br>
+I also implemented a bounded volume hierarchy for faster ray-triangle intersection<br>
+
 ```
 TODO:
     - Add support for AVX512 for my Ryzen 9 7900X to crunch
@@ -19,6 +21,13 @@ Config:
     <li> 6 ray bounces
     <li> 1000 iterations
 </ul>
+Works with meshes<br>
+![a](splash_art_mesh.png)
+
+
+Showing the octree nodes using debug spheres:<br>
+![a](octree_nodes.png)
+
 Result with sRGB<br>
 
 ![a](splash_art_srgb.png)
