@@ -22,8 +22,8 @@ Config:
     <li> 1000 iterations
 </ul>
 Works with meshes<br>
-![a](splash_art_mesh.png)
 
+![a](splash_art_mesh.png)
 
 Showing the octree nodes using debug spheres:<br>
 ![a](octree_nodes.png)
