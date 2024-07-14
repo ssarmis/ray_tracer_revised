@@ -40,3 +40,5 @@ This also has a UI mode where you can see the image update in real time:
 (The GIF software had some issues with some slight changes in frames, so some artifacts only appear in the GIF)
 
 ![a](path_tracing.gif)
+
+Created by Streanga Sarmis-Stefan
